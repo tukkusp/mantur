@@ -32,6 +32,22 @@
             color: rgb(246, 237, 237);
             font-size: 25px;
         }
+         .marquee-container {
+            background: linear-gradient(to right, #4caf50, #2e7d32);
+            padding: 10px;
+            border-radius: 5px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        .marquee-container a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 18px;
+            font-family: Arial, sans-serif;
+        }
+        .marquee-container a:hover {
+            text-decoration: underline;
+        }
     </style>
 </head>
 <body>
@@ -104,6 +120,17 @@
             <span class="visually-hidden">Next</span>
         </button>
     </div>
+    <br>
+
+    <div class="marquee-container">
+        <marquee behavior="scroll" direction="left">
+            <a href="https://example.com/updates" target="_blank">
+                Please click here for the updates
+            </a>
+        </marquee>
+    </div>
+
+    <br>
 
     <div class="intro-image" style="width:100%;">
             <img src="grid-img-1.jpg" alt="Dr. Muttanna Mantur" style="height:300px;width:100%;">
